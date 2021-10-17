@@ -21,18 +21,26 @@
 	<body>
 		<h1 id="title"><strong>Suffer</strong></h1>
 		<img src="https://static.thenounproject.com/png/1322205-200.png" height="440px" alt="outline of a plague doctor mask" style="margin-bottom:0px;">
-		<h2 style="margin-top:0px;">I Am But An Evil Little Man And I Will Make Myself Your Problem</h2>
+		<h2 style="margin-top:0px;">I Am But A Little Man</h2>
 		<br>
 		<h3>Pineapple</h3>
 		<br>
 		<h1>Stand Before The Council and Confess Your Sins</h1>
-		<img title="charming" src="pexels-lisa-1161547.jpg" height="200" alt="pineapple with round glasses on yellow background">
+		<img title="charming" src="pexels-lisa-1161547.jpg" height="200" alt="pineapple with round glasses on yellow background" usemap="#1st_pineapple_map">
+		<map name = "1st_pineapple_map">
+		</map>
 		<img title="pretty" src="pexels-pineapple-supply-co-1071878.jpg" width="200" alt="pineapple with aviators & party hat on white background">
 		<img title="acidic" src="pexels-živa-trajbarič-1189314.jpg" height="200" alt="pineapple with pink glasses on white background">
 		<img title="frsh" src="pexels-miesha-maiden-459601.jpg" height="200">
 		<img title="breath-taking" src="pexels-shvets-production-7194786.jpg" height="200">
 
-		
+		<script>
+			draw = function(){
+			var label = mouseX + ", " + mouseY;
+			text(label, mouseX + 10, mouseY + 10);
+			};
+				
+		</script>
 		
 	</body>
 </html>
