@@ -1,4 +1,6 @@
 //a random color 
+const chooseColorBtn = document.getElementById("choose-color-btn");
+
 chooseColorBtn.addEventListener("click", chooseRandomColor());
 
 function chooseRandomColor(){
