@@ -9,4 +9,5 @@ function chooseRandomColor(){
   const blueValue = Math.floor(Math.random() * 256);
 
   document.getElementById("color-display").style.backgroundColor = "#FF99CC";
+  document.getElementById("color-display").textContent = "Hi Randy";
 };
