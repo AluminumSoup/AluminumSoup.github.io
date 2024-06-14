@@ -8,5 +8,5 @@ function chooseRandomColor(){
   const greenValue = Math.floor(Math.random() * 256);
   const blueValue = Math.floor(Math.random() * 256);
 
-  document.getElementById("color-display").style.backgroundColor = "#CCCC00";
+  document.getElementById("color-display").style.backgroundColor = "#FF99CC";
 };
