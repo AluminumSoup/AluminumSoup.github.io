@@ -10,6 +10,5 @@ function chooseRandomColor(){
   
   document.getElementById("color-display").style.backgroundColor = "#FF99CC";
   document.getElementById("color-display").textContent = "Hi Randy";
-  alert("ok");
 };
 
