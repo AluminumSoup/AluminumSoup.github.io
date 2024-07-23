@@ -3,9 +3,47 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="content" value="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
     <title>Logic Grid Tool</title>
   </head>
   <body>
-    
+    <h1>Logic Grid Tool</h1>
+    <h2>Fill in the fields to create a logic grid</h2>
+    <h3 id="blank-template-tip">Want a blank template? Just fill out the number fields!</h2>
+    <form>
+      <!-- Input for: 
+        - Number of rows *REQ
+        - Checkbox option for rectangular boxes (ie 5x4 instead of 5x5)
+                    - Number of left columns 
+                    - Number of right columns
+      - & Button to add a row/column
+      - & Button to remove a row/column
+      - Inputs for row names
+      - Inputs for left column names
+      - Inputs for right column names
+      - Checkbox for adding clues
+                    - Inputs (3) for adding clues
+                    - Button to add additional clue
+                    - Button to remove a clue
+      - Submit button, should give a printable version of logic grid
+      -->
+      <label for="row-num">Number of Rows:</label><br>
+      <input type="number" name="row-num" id="row-num" min="2" max="30" required/>
+      
+      <label for="yes-rectangle">Rectangular Grids</label><input type="checkbox" name="yes-rectangle" id="yes-rectangle" value=""/>
+
+      <div class="rect-grid-options"><!--Hidden if yes-rectangle is not selected-->
+        <label for="left-col-num">Number of Left Columns:</label><br>
+        <input type="number" name="left-col-num" id="left-col-num" min="2" max="30"/><!-- Default value should be value of row-num-->
+  
+        <label for="right-col-num">Number of Right Columns:</label><br>
+        <input type="number" name="right-col-num" id="right-col-num" min="2" max="30"/><!-- Default value should be value of row-num-->
+      </div>
+
+      <!--Use JS to insert correct number of text inputs for names -->
+      
+      
+      <button></button>
+    </form>
   </body>
 </html>
